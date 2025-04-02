@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "spin/lib/MigLayout/miglayout-core-5.3-sources.jar",
+        "spin/lib/MigLayout/miglayout-swing-5.3.jar"
+    ]
+}
