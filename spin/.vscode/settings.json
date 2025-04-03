@@ -2,8 +2,7 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Bureau\\miglayout-core-5.3-sources.jar"
+        "lib/**/*.jar"
     ],
     "java.dependency.packagePresentation": "hierarchical"
 }
