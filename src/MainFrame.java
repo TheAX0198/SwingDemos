@@ -31,7 +31,6 @@ public class MainFrame{
         frame = new JFrame();
         frame.setResizable(false);
         frame.setSize(600, 400);
-        frame.setIconImage(new ImageIcon("rsc/img/expension_of_light.png").getImage()); // change frame icon
         frame.setTitle("MotherFrame");
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setLocationRelativeTo(null);
