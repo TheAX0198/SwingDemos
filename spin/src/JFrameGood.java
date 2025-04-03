@@ -38,15 +38,15 @@ public class JFrameGood implements FrameManager {
         panel.setBackground(Color.BLACK);
 
         // Buttons
-        JButton button = new JButton("Touch me~");
+        JButton button = new JButton("I am a button");
         button.setBackground(Color.GRAY);
         panel.add(button);
 
-        JButton button1 = new JButton("Touch me harder~");
+        JButton button1 = new JButton("I also am a button");
         button1.setBackground(Color.GRAY);
         panel.add(button1);
 
-        JButton button2 = new JButton("All the way!~");
+        JButton button2 = new JButton("Me too!");
         button2.setBackground(Color.GRAY);
         panel.add(button2);
         //

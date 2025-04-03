@@ -18,7 +18,7 @@ public class Main {
     }
 
 
-    // JFrame comps skin
+    // JFrame comps skin | In this case : "Nimbus"
     private static void lookNFeel(String look){
         for(LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()){
             if (look.equals(info.getName())) {

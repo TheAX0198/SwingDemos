@@ -42,7 +42,7 @@ public class JFrameACT implements FrameManager {
 
         panel = new JPanel(ml); // "wrap" -> comps in row/col position, [] -> row/col, []25[] -> margin between row/col
 
-        label = new JLabel("Enter dat sweet DATA (that I won't steal) :");
+        label = new JLabel("Enter dat DATA (that I won't steal) :");
 
         passField = new JPasswordField(20);
         passField.setEchoChar('@'); // change hidden char * by other char

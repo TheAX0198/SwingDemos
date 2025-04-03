@@ -67,20 +67,20 @@ public class JFrameMenu implements FrameManager {
         menuFile.setMnemonic(KeyEvent.VK_M);
 
             // menu
-        item1 = new JMenuItem("Klu");
+        item1 = new JMenuItem("Opt 1");
         item1.setIcon(newIco("molden_nature.png"));
         item1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, ActionEvent.CTRL_MASK));
-        item1.addActionListener(newAct("Klu"));
+        item1.addActionListener(newAct("Opt 1"));
 
-        item2 = new JMenuItem("Klux");
+        item2 = new JMenuItem("Opt 2");
         item2.setIcon(newIco("gem_or_something.png"));
         item2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, ActionEvent.CTRL_MASK));
-        item2.addActionListener(newAct("Klux"));
+        item2.addActionListener(newAct("Opt 2"));
 
-        item3 = new JMenuItem("Klan");
+        item3 = new JMenuItem("Opt 3");
         item3.setIcon(newIco("the_shiny.png"));
         item3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E, ActionEvent.CTRL_MASK));
-        item3.addActionListener(newAct("Klan"));
+        item3.addActionListener(newAct("Opt 3"));
 
         menuFile.add(item1);
         menuFile.add(item2);
@@ -110,14 +110,14 @@ public class JFrameMenu implements FrameManager {
 
             // checkBox 
         checkBox = new JCheckBox();
-        checkBox.setText("Turn me on~");
+        checkBox.setText("Check me like in chess");
         checkBox.setFocusable(false);
 
         checkBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (checkBox.isSelected()) {
-                    System.out.println("You're such a tease uwu");
+                    System.out.println("Nooo you checkmated me!");
                 }
             }
         });

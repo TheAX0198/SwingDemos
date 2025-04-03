@@ -18,20 +18,20 @@ import javax.swing.SwingConstants;
 
 import net.miginfocom.swing.MigLayout;
 
-public class JFrameButts implements FrameManager {
+public class JFrameButtons implements FrameManager {
 
     private JFrame frame;
     private JPanel panel;
     private JButton butt;
     private JLabel label;
 
-    public JFrameButts(){
+    public JFrameButtons(){
         initialize();
     }
 
     private void initialize(){
         frame = new JFrame();
-        frame.setTitle("Big Butts Title");
+        frame.setTitle("Big Buttons Title");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().setBackground(Color.BLACK);
         frame.setSize(600, 400);
@@ -48,7 +48,7 @@ public class JFrameButts implements FrameManager {
         butt = createButt();
         
         // Label
-        label = new JLabel("I'm half white, other hal...");
+        label = new JLabel("Come on... Click it ");
         label.setForeground(Color.WHITE); // text color
 
         ImageIcon labelIcon = new ImageIcon("rsc/img/the_shiny.png");
@@ -63,7 +63,7 @@ public class JFrameButts implements FrameManager {
     }
 
     private JButton createButt(){
-        JButton butt = new JButton("Touch me~");
+        JButton butt = new JButton("May I require you to click me?");
         butt.setFocusable(false);
 
         ImageIcon icon = new ImageIcon("rsc/img/gem_or_something.png");
@@ -72,7 +72,7 @@ public class JFrameButts implements FrameManager {
 
         butt.setMnemonic(KeyEvent.VK_UP); // alt+up -> button press
 
-        butt.setToolTipText("That's a nice butt right there");
+        butt.setToolTipText("That's a nice button right there");
 
         butt.setFont(new Font("Times New Roman", Font.ITALIC, 18));
 
@@ -82,7 +82,7 @@ public class JFrameButts implements FrameManager {
         butt.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				buttPhonk("Mh~ That tickles ^^");
+				buttPhonk("You have really good tastes");
             }
         });
 

@@ -1,5 +1,7 @@
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -28,6 +30,15 @@ public class JFrameGrid implements FrameManager {
         panel = new JPanel(new GridLayout(col, row, 10, 10)); // {row, col, hgap, vgap}
         for(int i = 0; i < (col*row); i++){
             JButton button = new JButton(Integer.toString(i));
+
+            // On click
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(button.getText());
+                }
+            });
+
             panel.add(button);
         }
 

@@ -3,6 +3,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -30,7 +31,8 @@ public class MainFrame{
         frame = new JFrame();
         frame.setResizable(false);
         frame.setSize(600, 400);
-        frame.setTitle("Mommy Frame");
+        frame.setIconImage(new ImageIcon("rsc/img/expension_of_light.png").getImage()); // change frame icon
+        frame.setTitle("MotherFrame");
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setLocationRelativeTo(null);
 
@@ -40,14 +42,14 @@ public class MainFrame{
         fm[0] = new JFrameACT();
         fm[1] = new JFrameGood();
         fm[2] = new JFrameGrid();
-        fm[3] = new JFrameButts();
+        fm[3] = new JFrameButtons();
         fm[4] = new JFrameText();
         fm[5] = new JFrameMenu();
 
         act = btn("ACT", 0);
         good = btn("Good", 1);
         grid = btn("Grid", 2);
-        butts = btn("Butts", 3);
+        butts = btn("Buttonss", 3);
         text = btn("Text", 4);
         menu = btn("Menu", 5);
         //
